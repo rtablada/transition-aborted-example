@@ -17,6 +17,14 @@ module.exports = function (environment) {
       // Here you can pass flags/options to your application instance
       // when it is created
     },
+
+    fastboot: {
+      hostWhitelist: [
+        'example.com',
+        'subdomain.example.com',
+        /^localhost:\d+$/,
+      ],
+    },
   };
 
   if (environment === 'development') {

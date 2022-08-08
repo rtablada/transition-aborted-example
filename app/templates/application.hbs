@@ -1,7 +1,103 @@
-{{page-title "RouterExample"}}
+<div class='link-lists'>
+  <ul>
+    <li>These Links Use LinkTo and will route immediatly</li>
+    <li>
+      <LinkTo @route='index'>
+        Reset
+      </LinkTo>
+    </li>
+    <li>
+      <LinkTo @route='redirect.1-docs'>
+        1-docs
+      </LinkTo>
+    </li>
+    <li>
+      <LinkTo @route='redirect.2-return'>
+        2-return
+      </LinkTo>
+    </li>
+    <li>
+      <LinkTo @route='redirect.3-async-no-return'>
+        3-async-no-return
+      </LinkTo>
+    </li>
+    <li>
+      <LinkTo @route='redirect.4-async-with-return'>
+        4-async-with-return
+      </LinkTo>
+    </li>
+    <li>
+      <LinkTo @route='redirect.6-native-promise-chain'>
+        6-native-promise-chain
+      </LinkTo>
+    </li>
+    <li>
+      <LinkTo @route='redirect.7-rsvp-promise-chain'>
+        7-rsvp-promise-chain
+      </LinkTo>
+    </li>
+    <li>
+      <LinkTo @route='redirect.8-service-rsvp'>
+        8-service-rsvp
+      </LinkTo>
+    </li>
+    <li>
+      <LinkTo @route='redirect.9-service-async'>
+        9-service-async
+      </LinkTo>
+    </li>
+  </ul>
+  <ul>
+    <li>These Links Use Native anchors to simulate deep linking, refreshes,
+      crashes, etc</li>
+    <li>
+      <a href='/index/'>
+        Reset
+      </a>
+    </li>
+    <li>
+      <a href='/redirect/1-docs'>
+        1-docs
+      </a>
+    </li>
+    <li>
+      <a href='/redirect/2-return'>
+        2-return
+      </a>
+    </li>
+    <li>
+      <a href='/redirect/3-async-no-return'>
+        3-async-no-return
+      </a>
+    </li>
+    <li>
+      <a href='/redirect/4-async-with-return'>
+        4-async-with-return
+      </a>
+    </li>
+    <li>
+      <a href='/redirect/6-native-promise-chain'>
+        6-native-promise-chain
+      </a>
+    </li>
+    <li>
+      <a href='/redirect/7-rsvp-promise-chain'>
+        7-rsvp-promise-chain
+      </a>
+    </li>
+    <li>
+      <a href='/redirect/8-service-rsvp'>
+        8-service-rsvp
+      </a>
+    </li>
+    <li>
+      <a href='/redirect/9-service-async'>
+        9-service-async
+      </a>
+    </li>
+  </ul>
+</div>
 
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
+<WaitSlider />
 
 {{outlet}}

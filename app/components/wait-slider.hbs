@@ -1,0 +1,13 @@
+<p>
+  This slider sets the time delay before resolving and redirecting.
+
+  <Input
+    @type='range'
+    id={{unique-id}}
+    min='100'
+    max='5000'
+    @value={{this.config.waitTime}}
+  />
+</p>
+
+<p>Redirects will be delayed by {{this.config.waitTime}}ms</p>
